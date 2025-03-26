@@ -1,0 +1,403 @@
+
+
+	-Introduction	
+
+	Java is a high-level programming language originally developed by Sun Microsystems and released in 1995. Java
+	runs on a variety of platforms, such as Windows, Mac OS, and the various versions of UNIX. 
+
+	Java SE 17 (Standard Edition)
+
+	-Why?
+	Object Oriented
+
+	(OOP) is a programming relies on the concept of classes and objects. It is used to structure a software program
+	 into simple, reusable pieces of code (usually called classes), which are used to create individual instances of 
+	objects.
+
+	(A class is a group of objects which have common properties. It is a template or blueprint 
+	from which objects are created. A class in Java can contain.
+
+		Fields
+		Methods
+		Constructors
+		Blocks
+		Nested class and interface)
+
+	(An entity that has state and behavior is known as an object e.g., chair, bike, marker, pen, table, car)
+
+	
+	Platform Independent
+
+	you can use to implement things on one machine and use them on another machine without 
+	(or with minimal) changes.
+	
+
+	Simple 
+
+	Java is very easy to learn, and its syntax is simple, clean and easy to understand.
+
+
+	Secure
+
+	Java programs run inside a (JVM) virtual machine.
+	Java does not support explicit pointer. (java uses pointer implicitly: Java use pointers for manipulations of 
+	references but these pointers are not available for outside use. Any operations implicitly done by the language 
+	are actually NOT visible)
+	It provides java.security package implements explicit security.
+	It provides library level safety.
+	Run-time security check takes place when we load new code.
+
+
+	Portable
+
+	Whenever the javacode is compiled, the compiler generates a byte code. Now, the Bytecodes that are 
+	generated are safe and can be run on any machine.
+
+
+	Robust
+
+	 It is capable of handling run-time errors, supports automatic garbage collection and exception handling
+                 and avoids explicit pointer concept.
+	
+
+	Datatypes.Java
+	-DataTypes			Example
+		String			Hello World
+		char			c
+		int			70	    	//-2147483648 to 2147483647
+		long			9999999999 	//-9223372036854775808 to 9223372036854775807
+		short			-2000	  	 //-32768 to 32767
+		float			2.5
+		double			4444444444444444444.5  //fractional numbers 
+		boolean			true / false
+		byte			-100	    	//-128 to 127	
+
+	Input.java
+	-Scanner
+		Obj.next();		String		//input <obj_Name>
+		Obj.nextInt();		Integer
+		input.nextDouble();		Double
+		input.nextLong();		Long
+		input.nextFloat();		Float
+		input.nextBoolean(); 	                Boolean
+		input.nextLine();		Line
+
+	Contitional.java / Select.java
+	-Conditional Statements
+						
+			if		Statement           <True Statement>
+			if_Else		Statement	         <True and False Statement>
+
+			if
+			Else If		Nested If Statement
+			Else
+			
+			Switch
+	Loop.java
+	-Loop (Execution a set of statements N-times until a condition is satisfied)
+		For
+		While & Do While
+
+	-Operators
+		Arithmetic
+		+	-	*	/	%
+		
+		a=5      b=15
+		Relational
+		==  	     !=	        >	       <	        >=	          <=	
+		a==b	   a!=b	 
+
+		Assignment
+		=
+
+		Logical				
+		&&	||	!			
+
+	-OOPs concepts <Object Oriented Programming Language>
+
+	Employee			Rambo extends Employee
+	EmpID				1001
+	EmpName				Rambo
+
+	Attendance()			25
+	Project()			Banking
+
+
+	BankP.java / ICICI / SBI / HDFC /ExampleP
+	-Inheritance
+	Inheritance means one class can extend to another class. So that the codes can be reused from 
+	one class to another	class. The existing class is known as the Super class whereas the derived 
+	class is known as a sub class. <Five types of Inheritance>
+		Single class A			Class B extends A
+/ 		Multi level Class A	Class B extends A	Class C extends B
+/ 		Multiple Class A	Class B			Class C extends A, B
+ / 		Hierarchical Class A    Class B extends A	Class C extends A
+ / 		Hybrid Class A		Class B extends A	Class C extends A	class D extends A, B
+
+	MainFunction.java / ImplementsS / InterfaceS / InterfaceS1
+	-Interface <Multiple Inheritance>
+	Multiple inheritances cannot be achieved in java. To overcome this problem Interface concept is introduced.
+	An interface is a template which has only method declarations and not the method implementation.
+
+	Encapsulation1 / Encapsulation2.java
+	-Encapsulation
+	Protects the code from others, Code maintainability. <Data Hiding>
+
+			getter <Pausing the data to the called method>
+			& setter < Assigning the data to the  Variable>
+
+	OverridingS.java / OverloadingS
+	-Polymorphism
+	Polymorphism means many forms. 
+	A single object can refer to the super-class or sub-class depending on the reference type 
+	which is called polymorphism.
+	<-Method Overriding & Method Overloading->
+
+	-Abstraction
+
+	A class which is declared with the abstract keyword is known as an abstract class in Java. 
+	It can have abstract and non-abstract methods (method with the body).
+
+	-Return 
+
+	-Local and Instance Variable
+	
+	ConstructS.java
+	-Constructor	<Default and Parameterized Constructor>
+
+	This
+
+	-Packages
+		Packages avoid the name clashes.
+		The Package provides easier access control.
+		We can also have the hidden classes that are not visible outside and used by the package.
+		It is easier to locate the related classes.
+
+		cv.java
+		-Constant Values
+
+		Constant is a value that cannot be changed after assigning it.
+
+		Java doesn't support constatns so an alternate non-access modifiers static and final.
+
+		Staticexample.java
+		-Static
+			
+		   int employeeNumber;					
+		   String employeeName;  					
+		   static String companyName ="XYZ";	
+	
+	
+
+		-Final 	variable 		final float pi = 3.14;
+			
+				final float pi;   <Value can be intialized inside Constructor only>
+
+		method 		final void run(){System.out.println("Can't be Changed")}
+	
+		class		final Class <className>
+
+				
+									
+	-Public, Protected and Private <Difference>				
+				Default |	Public  |  Protected	|   Private	
+	
+	Same Class		         Y	   Y	   Y	        Y
+
+	Class in same 		       Y	   Y	   Y	        N
+	Package
+
+	Subclass in same 		   Y	   Y	   Y	        N
+	Package
+
+	Subclass outside  		   N	   Y	   Y	        N
+	same Package
+
+	Non-subclass 		   N	   Y	   N	        N
+	outside same Package
+
+
+	Enumexample.java
+	-Enums <Enumerated Data Type>
+
+	Enum is a data type, which contains a fixed set of constants.
+
+	Enums can be thought of as a class which have a fixed set of constants (a variable that does not change).
+	
+	Enums are used to create our own data type like classes.
+
+
+
+	Arrays.java
+                -Arrays
+	
+	ArraylistS.java
+	-ArrayList   Difference between Array & ArrayList found in <java.util package> //Collections
+
+	Size should be given at time of array declaration. | Size may not be required, It changes the size dynamically.
+
+	Ex: String[] name = new String[2]	              | ArrayList <String> name = new ArrayList
+	       name[1] =  book 		                 name.add( book )
+	
+	Ways to iterate the elements of the collection in Java
+	
+		 Iterator	<forward iteration>
+		 for loop
+		 for-each
+		ListIterator <forward and backward iteration>
+
+	Hash Map | Hash Table | Hash Set | Tree Set
+
+	Exception1 to 5.java
+	-Exception Handling <Error Handling>
+
+	Exception is a problem that can occur during the normal flow of execution. A method can throw an 
+	exception when something fails at runtime. If that exception couldn t be handled, then the execution
+	gets terminated before it completes the task. If we handle the exception, then the normal flow gets
+	continued. 	<java.lang.Exception>
+
+					
+		int a = 50 / 0;	//ArithmeticException  	
+
+		String s = null;  
+		System.out.println(s.length());		//NullPointerException 
+
+		String s = "10";  
+		int i = Integer.parseInt(s);	//NumberFormatException  
+
+		int a[] = new int[5];  
+		a[10] = 50; 		//ArrayIndexOutOfBoundsException 
+	
+	Ways of handling exceptions:
+	
+		Using Try / Catch
+
+		Using Throws			Throw   &    Throws
+					
+						- Throw an Exception
+
+						- Throws
+
+	-String functions / Methods
+	
+	String compare			String s1="Venkatesh";  
+				   	String s2="Venkatesh";  
+	"=="	equals() method		System.out.println(s1.equals(s2));	//true
+
+					String s1="Venkatesh";  
+					String s2="VENKATESH";  
+		equalsIgnoreCase()		System.out.println(s1.equalsIgnoreCase(s2));  //true
+
+					 String s1="Venkatesh";  
+					 String s2="Venkatesh";  
+		== operator		 System.out.println(s1==s2);	//true
+
+					String s1="Venkatesh";  		
+   					String s2="Venkatesh";  
+					String s3="Vivek";  			
+		compareTo() method	                System.out.println(s1.compareTo(s2));	//0  
+					System.out.println(s1.compareTo(s3));	 
+					System.out.println(s3.compareTo(s1));	 
+	String Concatenation		
+		+ operator		String s = "Venkatesh" + "Indramohan";  //Venkatesh Indramohan
+					System.out.println(s);				
+
+		concat() method		String s1="Venkatesh ";  
+					String s2="Indramohan";  
+					System.out.println(s1.concat(s2));  //VenkateshIndramohan
+	
+		Substring			String s="VenkateshIndramohan";  
+					System.out.println(s.substring(9));	//Indramohan
+					System.out.println(s.substring(0,9));	//Venkatesh
+
+					String s="Venkatesh";  
+		toUpperCase() 		System.out.println(s.toUpperCase());
+		toLowerCase()		System.out.println(s.toLowerCase());	
+
+		trim() 			String s="  Venkatesh  ";  
+					System.out.println(s.trim());		//Venkatesh
+
+					String s="Venkatesh"; 
+		startsWith()		System.out.println(s.startsWith("Ve));	//true
+ 		endsWith()		System.out.println(s.endsWith("h"));	//true
+
+					
+
+					String s="Venkatesh";  
+		charAt()			System.out.println(s.charAt(0));	//V
+					System.out.println(s.charAt(3));	//k
+
+					String s="Venkatesh";  	//9
+		toCharArray()		char[] ch=s.toCharArray();  
+					for(int i=0;i<ch.length;i++)      		 // i<9 (9)
+						System.out.print(ch[i]); 
+
+					String str = new String("hello welcome to java");  
+      					char[] ch = new char[10];  
+		//getChars(int srcBeginIndex, int srcEndIndex, char[] destination, int dstBeginIndex)
+		getChars()		str.getChars(6, 12, ch, 0);  
+					System.out.println(ch);  	//welcome
+				
+					String s="Venkatesh";  
+		length()			System.out.println(s.length());		//9
+
+					int a=10;  
+		valueOf()			String s=String.valueOf(a);  		//10
+					System.out.println(s); 		//10
+					System.out.println(s + 10); 		//1010
+
+					String s1="Hello guys, Hello Welcome's you...";    
+		replace()			String s2=s1.replace("Hello","Java");
+					System.out.println(s2);    
+
+					String s1="Hello guys, Hello Welcome's you...";  
+		replaceAll()		String s2=s1.replaceAll("Hello","Java");
+					System.out.println(s2);  
+
+					String name="Hello welcome Java World";  
+		contains()			System.out.println(name.contains("Welcome Java"));	//true
+
+					String s1="this is index of example";  
+					//passing char value  
+		indexOf()			int i=s1.indexOf('s');
+					System.out.println(i);		//3					
+
+					//passing substring  
+					int i1=s1.indexOf("is");		//2 <0>
+					int i2=s1.indexOf("index");
+					System.out.println(i1+"  "+i2);		//2 8  
+  
+					//passing substring with from index  
+					int i3=s1.indexOf("is",4);
+					System.out.println(i3);		//5 <4>
+  
+					String s1="";  
+		isEmpty()			System.out.println(s1.isEmpty()); 	//true
+
+					String s1="welcome to split world";  
+					String[] words=s1.split("//s");	//splits based on whitespace  
+		split()  'RegEx		for(String w:words)
+						System.out.println(w);  <4>	Welcome
+									to
+									split
+									world
+
+					for(String w:s1.split("\\s",0))
+						System.out.println(w);  <4>
+
+
+
+					for(String w:s1.split("\\s",1))		Welcome to split world
+						System.out.println(w);  	
+ 
+		25-Aug-2021		for(String w:s1.split("\\s",2))		Welcome
+                               split("-")			System.out.println(w);  	to split world
+
+		25			String str = "Javatpointtt";  
+		Aug			String[] arr = str.split("t", 0);  		java
+		2021			for (String w : arr) 			poin
+						   System.out.println(w);  
+
+
+	
+		

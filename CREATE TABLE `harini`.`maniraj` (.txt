@@ -1,0 +1,4 @@
+CREATE TABLE `harini`.`maniraj` (
+  `id` INT NULL,
+  `name` VARCHAR(45) NULL,
+  `sal` VARCHAR(45) NULL);

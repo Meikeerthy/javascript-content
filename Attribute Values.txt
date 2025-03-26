@@ -1,0 +1,15 @@
+Attribute Values
+
+Description
+
+color_name
+
+It sets the background color by using the color name. For example “red”.
+
+hex_number
+
+It sets the background color by using the color hex code. For example “#0000ff”.
+
+rgb_number
+
+It sets the background color by using the RGB code. For example: “RGB(0, 153, 0)”.

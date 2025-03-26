@@ -1,0 +1,8 @@
+	// Java Script file...
+
+
+   let batch = "IT";
+
+   console.log(batch);
+
+   document.getElementById("root").innerhtml = batch;
